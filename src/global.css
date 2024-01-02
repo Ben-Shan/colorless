@@ -1,0 +1,12 @@
+/* Example: src/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #fff;
+    --font-family-title: 'Rubik Mono One';
+    --font-family-body: 'Space Mono', monospace;
+    --padding: 10px;
+  }
+  

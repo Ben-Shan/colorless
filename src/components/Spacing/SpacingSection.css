@@ -1,0 +1,38 @@
+.spacing-container{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Adjust as needed */
+    color: var(--secondary-color);
+    width: 100vw;
+
+}
+
+.spacing-title{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10vh; /* Resets margin for the container */
+    padding: 10vh; /* Resets padding for the container */
+}
+      
+      .spacing-title h1 {
+        font-size: clamp(4vw, 8vw, 12vw);
+        margin: 0px; /* Resets both top and bottom margins */
+        font-family: var(--font-family-title);
+      }
+      
+      
+        .spacing-container p {
+          font-size: clamp(0.5vw, 1vw, 2vw);
+          margin-top: 5vh;
+          margin-left: 30vw;
+          margin-right: 30vw;
+          text-align: center;
+          font-family: var(--font-family-body);
+
+        }
