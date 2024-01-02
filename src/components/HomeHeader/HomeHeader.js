@@ -1,18 +1,19 @@
 import React from 'react';
-import './HomeHeader.css'; 
+import './HomeHeader.css';
+import { Link } from 'react-router-dom';
 
 function HomeHeader() {
     return (
         <header>
             <div class="header-left">
-            <a href="#">Colorless</a>
+            <a href="https://colorless.design">Colorless</a>
             </div>
             <div class="header-right">
-            <a href="#">Spacing</a>
-            <a href="#">Size</a>
-            <a href="#">Imagery</a>
-            <a href="#">Guidance</a>
-            <a href="#">Animation</a>
+            <a>Spacing</a>
+            <a>Size</a>
+            <a>Imagery</a>
+            <a>Guidance</a>
+            <a>Animation</a>
             </div>
         </header>
     );
