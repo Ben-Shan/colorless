@@ -5,14 +5,14 @@ function HomeHeader() {
     return (
         <header>
             <div class="header-left">
-            <a>Colorless</a>
+            <p>Colorless</p>
             </div>
             <div class="header-right">
-            <a>Spacing</a>
-            <a>Size</a>
-            <a>Imagery</a>
-            <a>Guidance</a>
-            <a>Animation</a>
+            <p>Spacing</p>
+            <p>Size</p>
+            <p>Imagery</p>
+            <p>Guidance</p>
+            <p>Animation</p>
             </div>
         </header>
     );
