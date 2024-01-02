@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomeHeader.css';
-import { Link } from 'react-router-dom';
 
 function HomeHeader() {
     return (
