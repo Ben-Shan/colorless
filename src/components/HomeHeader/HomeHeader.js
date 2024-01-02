@@ -5,7 +5,7 @@ function HomeHeader() {
     return (
         <header>
             <div class="header-left">
-            <a href="https://colorless.design">Colorless</a>
+            <a>Colorless</a>
             </div>
             <div class="header-right">
             <a>Spacing</a>
