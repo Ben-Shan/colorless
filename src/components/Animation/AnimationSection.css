@@ -1,5 +1,5 @@
-.spacing-container{
-    height: 150vh;
+.animation-container{
+    height: 100vh;
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -7,10 +7,12 @@
     justify-content: center; /* Adjust as needed */
     color: var(--secondary-color);
     width: 100vw;
+    position: relative;
+    top: -1vh;
 
 }
 
-.spacing-title{
+.animation-title{
 
     display: flex;
     flex-direction: column;
@@ -22,14 +24,15 @@
     padding-bottom: 10vh;
 }
       
-      .spacing-title h1 {
+      .animation-title h1 {
         font-size: clamp(4vw, 8vw, 12vw);
         margin: 0px; /* Resets both top and bottom margins */
         font-family: var(--font-family-title);
+        animation: pulse 2s infinite ease-in-out;
       }
       
       
-        .spacing-container p {
+        .animation-container p {
           font-size: clamp(0.5vw, 1vw, 2vw);
           margin-top: 0px;
           margin-left: 30vw;
@@ -38,3 +41,15 @@
           font-family: var(--font-family-body);
 
         }
+
+        @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1); /* slightly larger */
+            }
+            100% {
+              transform: scale(1);
+            }
+          }

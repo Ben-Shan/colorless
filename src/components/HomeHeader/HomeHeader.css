@@ -1,5 +1,5 @@
 header {
-    position:static;
+    position: static;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -7,8 +7,8 @@ header {
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     background-color: var(--secondary-color); /* Example background color */
   }
   
