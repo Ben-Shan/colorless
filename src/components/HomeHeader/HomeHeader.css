@@ -17,10 +17,10 @@ header {
     align-items: center;
   }
   
-  .header-left a {
+  .header-left p {
     font-family: var(--font-family-title);
   }
-  .header-right a {
+  .header-right p {
     font-family: var(--font-family-body);
     margin-left: 5vw; /* Spacing between right-aligned items */
   }
