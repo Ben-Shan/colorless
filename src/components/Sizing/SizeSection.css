@@ -1,0 +1,77 @@
+.size-container{
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center; /* Adjust as needed */
+    color: var(--primary-color);
+    width: 100vw;
+    position: relative;
+    
+
+}
+
+.size-title{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0;
+    padding-top: 0; /* Remove top padding */
+    padding-bottom: 10vh;
+}
+      
+      .size-title h1 {
+        font-size: clamp(4vw, 8vw, 12vw);
+        margin: 0px; /* Resets both top and bottom margins */
+        font-family: var(--font-family-title);
+        margin-left: 10vw;;
+      }
+      
+      
+        .size-container p {
+          font-size: clamp(0.5vw, 1vw, 2vw);
+          margin-top: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: left;
+          font-family: var(--font-family-body);
+
+            max-width: 40vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+
+        }
+
+.large-circle{
+    position: absolute;
+    top: -50px; /* Adjust this value as needed */
+    left: 80%; /* Centering the circle */
+    transform: translateX(-50%); /* Centering the circle */
+    width: 50%; /* Adjust width as needed */
+    padding-top: 50%; /* This makes the height equal to the width */
+    border-radius: 50%; /* This makes it a circle */
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color); /* Adjust border styling as needed */
+    z-index: 10; /* Ensures it appears above the previous section */
+    box-sizing: border-box;
+
+}
+
+.small-circle{
+    position: absolute;
+    top: 70%; /* Adjust this value as needed */
+    left: 50%; /* Centering the circle */
+    transform: translateX(-50%); /* Centering the circle */
+    width: 10%; /* Adjust width as needed */
+    padding-top: 10%; /* This makes the height equal to the width */
+    border-radius: 50%; /* This makes it a circle */
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color); /* Adjust border styling as needed */
+    z-index: 10; /* Ensures it appears above the previous section */
+    box-sizing: border-box;
+
+}

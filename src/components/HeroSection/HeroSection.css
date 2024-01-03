@@ -21,7 +21,7 @@
 }
 
 .hero-title h1 {
-  font-size: clamp(4vw, 8vw, 12vw);
+  font-size: clamp(10vw, 8vw, 12vw);
   margin: 0px; /* Resets both top and bottom margins */
   line-height: 1; /* Adjust line height as needed */
   font-family: var(--font-family-title);

@@ -1,40 +1,59 @@
-.spacing-container{
-    height: 150vh;
+.images-container{
+    height: 100vh;
     background-color: var(--primary-color);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     justify-content: center; /* Adjust as needed */
     color: var(--secondary-color);
     width: 100vw;
+    position: relative;
+    
 
 }
 
-.spacing-title{
+.images-title{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 0; /* Remove top margin */
     margin-bottom: 0;
     padding-top: 0; /* Remove top padding */
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 }
       
-      .spacing-title h1 {
+      .images-title h1 {
         font-size: clamp(4vw, 8vw, 12vw);
         margin: 0px; /* Resets both top and bottom margins */
         font-family: var(--font-family-title);
+        margin-left: 10vw;
+        margin-right: 10vw;
       }
       
       
-        .spacing-container p {
+        .images-container p {
           font-size: clamp(0.5vw, 1vw, 2vw);
           margin-top: 0px;
-          margin-left: 30vw;
-          margin-right: 30vw;
+          margin-left: auto;
+          margin-right: auto;
           text-align: center;
           font-family: var(--font-family-body);
 
+            max-width: 30vw;
+            margin-left: 10vw;
+            margin-right: 15vw;
+
         }
+
+.large-image {
+    position: absolute;
+    top: -10vh; /* Adjust as needed */
+    left: 20%;
+    transform: translateX(-50%);
+    width: 50%; /* Control the size of the image */
+    height: auto; /* Maintain aspect ratio */
+
+    z-index: 10;
+ }
