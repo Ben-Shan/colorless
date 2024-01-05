@@ -7,6 +7,7 @@ import SizeSection from './components/Sizing/SizeSection';
 import ImagesSection from './components/Images/ImagesSection';
 import Guidance from './components/Guidance/GuidanceSection';
 import Animation from './components/Animation/AnimationSection';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ImagesSection/>
       <Guidance/>
       <Animation/>
+      <Footer/>
     </div>
   );
 }
