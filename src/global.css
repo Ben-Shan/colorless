@@ -11,7 +11,8 @@
   }
   
   body {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     overflow-x: hidden;
+    position: relative;
   }
   

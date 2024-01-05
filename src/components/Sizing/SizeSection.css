@@ -48,6 +48,7 @@
 
 .large-circle{
     position: absolute;
+    overflow-x: hidden;
     top: -50px; /* Adjust this value as needed */
     left: 80%; /* Centering the circle */
     transform: translateX(-50%); /* Centering the circle */
@@ -75,3 +76,41 @@
     box-sizing: border-box;
 
 }
+
+@media (max-width: 480px) {
+
+    .size-container {
+      height: 60vh;
+      justify-content: center;
+    }
+    .size-text-container {
+      max-width: 100vw;
+      height: 100vh;
+      align-items: center;
+    }
+    .size-title{
+        padding-bottom: 2vh;
+    }
+    .size-title h1 {
+      font-size: 10vw;
+      text-align: center;
+    }
+    .size-container p {
+      text-align: left;
+      font-size: 0.5em;
+    }
+
+    .large-circle{
+        left: 62%;
+        width: 60%;
+        padding-top: 60%;
+    }
+    .small-circle{
+        width: 20%;
+        padding-top: 20%;
+        top: 40%;
+        left: 80%;
+    }
+
+
+  }

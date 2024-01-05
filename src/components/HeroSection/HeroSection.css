@@ -1,4 +1,9 @@
 .hero-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+.hero-text-container {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -22,7 +27,7 @@
 }
 
 .hero-title h1 {
-  font-size: clamp(10vw, 8vw, 12vw);
+  font-size: 8vw;
   margin: 0px; /* Resets both top and bottom margins */
   line-height: 1; /* Adjust line height as needed */
   font-family: var(--font-family-title);
@@ -30,8 +35,32 @@
 
 
   .hero-container p {
-    font-size: clamp(0.5vw, 1vw, 2vw);
+    font-size: 1em;
     margin-top: 5vh;
     font-family: var(--font-family-body);
   }
-  
+
+
+  @media (max-width: 480px) {
+
+    .hero-container {
+      height: 75vh;
+    }
+    .hero-text-container {
+      max-width: 100vw;
+      height: 75vh;
+      align-items: center;
+    }
+    .hero-title h1 {
+      font-size: 16vw;
+      text-align: center;
+    }
+    .hero-container p {
+      text-align: center;
+      font-size: 0.8em;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+
+  }
