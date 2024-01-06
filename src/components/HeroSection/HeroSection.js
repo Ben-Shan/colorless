@@ -9,7 +9,7 @@ function HeroSection() {
           <h1>Color</h1>
           <h1>-less</h1>
         </div>
-        <p>Delve into the core elements of spatial harmony, visual balance, and compelling layouts in monochromatic tones. Explore how mastering design without color lays the groundwork for more impactful and dynamic creations, transforming the addition of color into a powerful tool for enhancing visual storytelling.</p>
+        <p>Effective interface design crucially involves accentuating various elements to guide user focus. While leveraging color can be an appealing and straightforward method, its impact tends to diminish with excessive use. Fortunately, many other alternative strategies exists so, next time you're designing, try color less! </p>
       </div>
     </div>
   );
