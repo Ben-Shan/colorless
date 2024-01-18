@@ -1,5 +1,6 @@
 import React from 'react';
 import './global.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroSection from './components/HeroSection/HeroSection';
 import HomeHeader from './components/HomeHeader/HomeHeader';
 import SpacingSection from './components/Spacing/SpacingSection';
@@ -9,18 +10,27 @@ import Guidance from './components/Guidance/GuidanceSection';
 import Animation from './components/Animation/AnimationSection';
 import Footer from './components/Footer/footer';
 
+import ErrorPage from './components/Error/Error';
+
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <HomeHeader/>
-      <HeroSection />
-      <SpacingSection/>
-      <SizeSection/>
-      <ImagesSection/>
-      <Guidance/>
-      <Animation/>
+      <Routes>
+        <Route path="/" element={(
+            <>
+              <HeroSection />
+              <SpacingSection/>
+              <SizeSection/>
+              <ImagesSection/>
+              <Guidance/>
+              <Animation/>
+            </>
+          )} />
+        <Route path="/Error" element={<ErrorPage />} />
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

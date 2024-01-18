@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #000000;
+    --primary-color-hover: rgba(0, 0, 0, 0.8);
     --secondary-color: #fff;
     --font-family-title: 'Rubik Mono One';
     --font-family-body: 'Space Mono', monospace;

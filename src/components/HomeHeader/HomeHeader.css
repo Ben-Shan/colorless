@@ -8,7 +8,7 @@ header {
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 1vh;
+    padding-top: 3vh;
     padding-bottom: 1vh;
     background-color: var(--secondary-color); /* Example background color */
   }
@@ -16,20 +16,47 @@ header {
   .header-left, .header-right {
     display: flex;
     align-items: center;
+    color: var(--primary-color);
   }
   
-  .header-left p {
-    font-family: var(--font-family-title);
-  }
-  .header-right p {
-    font-family: var(--font-family-body);
-    margin-left: 5vw; /* Spacing between right-aligned items */
-  }
-  
-  a {
+  .header-left a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-family: var(--font-family-title);
+  }
+  .header-right a {
+    text-decoration: none;
+    font-family: var(--font-family-body);
+    margin-left: 5vw; 
+    color: var(--primary-color);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-right a:before{
+    content: '';
+    color: var(--primary-color);
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-right a:hover {
+   background-position: 0;
+   color: var(--primary-color-hover);
+  }
+  
+  .header-right a:hover::before{
+    width: 100%;
   }
   
   /* Example Responsive adjustments */

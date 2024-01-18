@@ -1,0 +1,23 @@
+.error-page{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 5vh;
+}
+
+.error-image {
+    width: 40vw; /* Control the size of the image */
+    height: auto; /* Maintain aspect ratio */
+ }
+
+.error-page h1 {
+    font-size: 4rem;
+    font-family: var(--font-family-title);
+    color: var(--primary-color);
+    text-align: left;
+    width: 40vw;
+
+}
